@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shop_navigation"
+    app:startDestination="@id/itemShopFragment">
+
+    <fragment
+        android:id="@+id/itemShopFragment"
+        android:name="app.rltradingpost.itemshopdemo.ui.itemshop.ItemShopFragment"
+        android:label="fragment_item_shop"
+        tools:layout="@layout/fragment_item_shop">
+        <action
+            android:id="@+id/action_itemShopFragment_to_shopItemDetailsFragment"
+            app:destination="@id/shopItemDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/shopItemDetailsFragment"
+        android:name="app.rltradingpost.itemshopdemo.ui.itemdetails.ShopItemDetailsFragment"
+        android:label="fragment_shop_item_details"
+        tools:layout="@layout/fragment_shop_item_details" />
+</navigation>
