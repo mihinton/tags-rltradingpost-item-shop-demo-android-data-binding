@@ -1,6 +1,6 @@
 package app.rltradingpost.itemshopdemo.hilt
 
-import app.rltradingpost.itemshopdemo.api.ItemShopApiService
+import app.rltradingpost.itemshopdemo.data.service.ItemShopApiService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

@@ -1,10 +1,12 @@
-package app.rltradingpost.itemshopdemo.data.model
+package app.rltradingpost.itemshopdemo.data.model.entity
 
 import androidx.room.Entity
+import androidx.room.PrimaryKey
 
-@Entity(primaryKeys = ["itemShopId", "rlId"])
-data class RocketLeagueItem(
-    val itemShopId: String,
+@Entity
+data class ItemShopItem(
+    @PrimaryKey
+    val itemId: String,
     val rlId: Int,
     val name: String,
     val category: String,
@@ -15,5 +17,6 @@ data class RocketLeagueItem(
     val tradable: Boolean,
     val imageUrl: String,
     val previewUrl: String? = null,
-    val isFeatured: Boolean
+    val sectionId: String,
+    val order: Int
 )
